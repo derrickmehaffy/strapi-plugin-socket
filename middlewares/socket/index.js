@@ -1,5 +1,7 @@
 "use strict";
 
+const { sanitizeEntity } = require("strapi-utils");
+
 module.exports = (strapi) => {
   return {
     beforeInitialize() {
@@ -25,21 +27,30 @@ module.exports = (strapi) => {
           } else if (route.controller === "collection-types") {
             let model = strapi.getModel(ctx.params.model);
             let action;
+            let data;
 
             if (route.action === "bulkdelete") {
               action = "delete";
+              let rawData = Object.values(ctx.response.body);
+              data = rawData.map((entity) =>
+                sanitizeEntity(entity, { model: strapi.models[model.apiName] })
+              );
             } else {
               action = route.action;
+              data = await sanitizeEntity(ctx.response.body, {
+                model: strapi.models[model.apiName],
+              });
             }
 
             if (
               model.apiName in strapi.controllers &&
               actions().includes(route.action) === true
             ) {
+              console.log(Object.values(ctx.response.body));
               strapi.StrapIO.emit(
                 strapi.controllers[model.apiName],
                 action,
-                ctx.response.body
+                data
               );
             }
           }
