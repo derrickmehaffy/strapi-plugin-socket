@@ -1,0 +1,43 @@
+{
+  "name": "strapi-plugin-socket",
+  "version": "0.1.0",
+  "description": "A Strapi test plugin used to show how you could integrate with Socket.io",
+  "strapi": {
+    "name": "Socket",
+    "icon": "plug",
+    "description": "A Strapi plugin used to show how you could integrate with Socket.io"
+  },
+  "dependencies": {
+    "strapio": "^1.0.11"
+  },
+  "author": {
+    "name": "The Strapi Guru",
+    "url": "https://strapi.guru"
+  },
+  "maintainers": [
+    {
+      "name": "Derrick Mehaffy",
+      "email": "derrickmehaffy@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/derrickmehaffy/strapi-plugin-socket.git"
+  },
+  "bugs": {
+    "url": "https://github.com/derrickmehaffy/strapi-plugin-socket/issues"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "GPLv3",
+  "keywords": [
+    "strapi",
+    "socket.io",
+    "socketio",
+    "websocket",
+    "websockets",
+    "plugin"
+  ]
+}
