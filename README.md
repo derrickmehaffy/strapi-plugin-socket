@@ -6,6 +6,17 @@ It's not likely I will maintain this (maybe we will see) but it's just showing h
 
 If you want to discuss more, then post on the [forum thread](https://forum.strapi.io/t/strapio-the-ez-to-use-socket-io-configurator/414)
 
+## Install in Strapi
+
+Installing is simple and the plugin is enabled by default just a simple:
+
+- `npm i -s strapi-plugin-socket`
+- `yarn add strapi-plugin-socket`
+
+In a Strapi project, tested on v3.6.2
+
+## Client Sample
+
 If you want a sample client to test with this:
 
 **NOTE** as the original package author of StrapIO didn't specify you need the following package version of `"socket.io-client": "2.3.0"`
@@ -17,7 +28,7 @@ Init a new node project in a clean folder:
 
 Install the proper socket.io client:
 
-- `npm install -s socket.io-client:2.3.0`
+- `npm i -s socket.io-client:2.3.0`
 - `yarn add socket.io-client:2.3.0`
 
 Create an `index.js`:
