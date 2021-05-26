@@ -46,7 +46,6 @@ module.exports = (strapi) => {
               model.apiName in strapi.controllers &&
               actions().includes(route.action) === true
             ) {
-              console.log(Object.values(ctx.response.body));
               strapi.StrapIO.emit(
                 strapi.controllers[model.apiName],
                 action,
