@@ -1,10 +1,14 @@
 # Strapi Socket.io Plugin
 
-## THIS IS JUST A SAMPLE PLUGIN
+## Description
 
-It's not likely I will maintain this (maybe we will see) but it's just showing how you can integrate the community package [StrapIO](https://www.npmjs.com/package/strapio) into a plugin and not have to write a ton of custom controllers to use it.
+this plugin will enhance strapi with an easy to use [StrapIO](https://www.npmjs.com/package/strapio). It will trigger on entity changes and you don't need to write custome Controller like with StrapIO alone.
 
 If you want to discuss more, then post on the [forum thread](https://forum.strapi.io/t/strapio-the-ez-to-use-socket-io-configurator/414)
+
+Or join the [Discord](https://discord.gg/QqJd3HXa6J).
+
+The plugin was first created by [derrickmehaffy - The Strapi Guru ](https://strapi.guru)
 
 ## Install in Strapi
 
@@ -67,7 +71,8 @@ TLDR: This works for updates made both in REST and the Strapi admin panel. I did
 
 ---
 ## Configuration
-#### you can enable endpoints by creating an extension for strapi-plugin-socket
+
+ **you can enable endpoints by creating an extension for strapi-plugin-socket**
 
 extensions/socket/services/config.json
 ```json
