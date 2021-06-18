@@ -1,7 +1,7 @@
 {
-  "name": "strapi-plugin-socket",
-  "version": "0.1.2",
-  "description": "A Strapi test plugin used to show how you could integrate with Socket.io",
+  "name": "strapi-plugin-socket.io",
+  "version": "0.1.3-alpha.0",
+  "description": "A Strapi plugin used to show how you could integrate with Socket.io",
   "strapi": {
     "name": "Socket",
     "icon": "plug",
@@ -16,16 +16,20 @@
   },
   "maintainers": [
     {
+      "name": "Lars Feldeisen",
+      "email": "lars@feldeisen.de"
+    },
+    {
       "name": "Derrick Mehaffy",
       "email": "derrickmehaffy@gmail.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/derrickmehaffy/strapi-plugin-socket.git"
+    "url": "git://github.com/larsonnn/strapi-plugin-socket.io.git"
   },
   "bugs": {
-    "url": "https://github.com/derrickmehaffy/strapi-plugin-socket/issues"
+    "url": "https://github.com/larsonnn/strapi-plugin-socket.io/issues"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
